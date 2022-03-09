@@ -376,7 +376,7 @@
             "Text": "Indicador"
           },
           "Font": ";13;;",
-          "Icon": "Adjust",
+          "Icon": "Wifi",
           "IconSet": "Quarter",
           "DashboardInteraction": {
             "Ident": "Indicator",
