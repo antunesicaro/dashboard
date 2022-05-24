@@ -1,10 +1,10 @@
 {
   "ReportVersion": "2019.4.2",
-  "ReportGuid": "18005924dd6dcbc6bd872d99a43aa2d7",
+  "ReportGuid": "30cbf9aaacb2171947763eebe2fdeddc",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportCreated": "/Date(1646284820000-0300)/",
-  "ReportChanged": "/Date(1646284820000-0300)/",
+  "ReportCreated": "/Date(1646263220000-0300)/",
+  "ReportChanged": "/Date(1646263220000-0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Centimeters",
@@ -134,13 +134,13 @@
       "Ident": "StiDashboard",
       "Name": "Dashboard1",
       "Guid": "8102cd3d1e292954989817d3b86f9d42",
-      "Brush": "solid:Transparent",
+      "Brush": "solid:255,255,255",
       "Components": {
         "0": {
           "Ident": "StiRegionMapElement",
           "Name": "RegionMapElement1",
           "Guid": "4271424804f2e168772b6df09419de1b",
-          "ClientRectangle": "720,120,490,630",
+          "ClientRectangle": "720,115,490,630",
           "Border": ";;;;",
           "DashboardInteraction": {
             "Ident": "RegionMap",
@@ -180,7 +180,7 @@
           "Ident": "StiTableElement",
           "Name": "TableElement1",
           "Guid": "100f41d70eb2d42dcb29010c1af421fd",
-          "ClientRectangle": "20,575,460,165",
+          "ClientRectangle": "80,590,300,165",
           "Border": ";;;;",
           "Columns": {
             "0": {
@@ -200,7 +200,7 @@
               "Ident": "DimensionColumn",
               "Key": "86ad7656cdc0264520ab6e72f513b1a3",
               "Expression": "app_Produto.nome",
-              "Label": "nome",
+              "Label": "Nome",
               "DashboardInteraction": {
                 "Ident": "TableColumn",
                 "OnHover": "None",
@@ -212,7 +212,7 @@
               "Ident": "MeasureColumn",
               "Key": "9130b014a38b067fcc0d0d7e79d1bd4f",
               "Expression": "First(app_Produto.preco)",
-              "Label": "preco",
+              "Label": "Preço",
               "ShowTotalSummary": true,
               "DashboardInteraction": {
                 "Ident": "TableColumn",
@@ -225,7 +225,7 @@
               "Ident": "MeasureColumn",
               "Key": "3a8df3cb91880d7325ece95ff5422745",
               "Expression": "First(app_Produto.quantidade)",
-              "Label": "quantidade",
+              "Label": "Quantidade",
               "ShowTotalSummary": true,
               "DashboardInteraction": {
                 "Ident": "TableColumn",
@@ -238,45 +238,8 @@
               "Ident": "DimensionColumn",
               "Key": "50e38d216483217df5fa15f8e331225d",
               "Expression": "app_Produto.loja",
-              "Label": "loja",
+              "Label": "Loja",
               "Visible": false,
-              "DashboardInteraction": {
-                "Ident": "TableColumn",
-                "OnHover": "None",
-                "OnClick": "None",
-                "HyperlinkDestination": "NewTab"
-              }
-            },
-            "5": {
-              "Ident": "DimensionColumn",
-              "Key": "f99cfd0db5d6ca9501ecf583eeab34f8",
-              "Expression": "app_Produto._objectKey",
-              "Label": "_objectKey",
-              "Visible": false,
-              "DashboardInteraction": {
-                "Ident": "TableColumn",
-                "OnHover": "None",
-                "OnClick": "None",
-                "HyperlinkDestination": "NewTab"
-              }
-            },
-            "6": {
-              "Ident": "DimensionColumn",
-              "Key": "2151def83f4eb0350fe9f15734028c2e",
-              "Expression": "app_Produto.loja_nome",
-              "Label": "loja",
-              "DashboardInteraction": {
-                "Ident": "TableColumn",
-                "OnHover": "None",
-                "OnClick": "None",
-                "HyperlinkDestination": "NewTab"
-              }
-            },
-            "7": {
-              "Ident": "DimensionColumn",
-              "Key": "fcbd2db7b117b2edeece6592c8d0348e",
-              "Expression": "First(app_Produto.loja_vendas)",
-              "Label": "vendas",
               "DashboardInteraction": {
                 "Ident": "TableColumn",
                 "OnHover": "None",
@@ -288,8 +251,7 @@
           "HeaderFont": ";10;;",
           "FooterFont": ";10;;",
           "Title": {
-            "Text": "Tabela",
-            "Visible": false
+            "Text": "Tabela"
           },
           "DashboardInteraction": {
             "Ident": "Table",
@@ -302,7 +264,7 @@
           "Ident": "StiImageElement",
           "Name": "ImageElement1",
           "Guid": "6d1ac56035082c76305f885af881e16d",
-          "ClientRectangle": "1100,120,140,120",
+          "ClientRectangle": "1080,116,140,120",
           "Padding": {
             "Left": 0,
             "Top": 0,
@@ -328,7 +290,7 @@
           "Ident": "StiTextElement",
           "Name": "TextElement1",
           "Guid": "3f3cbc78c0f0b96676ccf53d30f915f1",
-          "ClientRectangle": "300,-15,520,90",
+          "ClientRectangle": "340,0,520,90",
           "Padding": {
             "Left": 0,
             "Top": 0,
@@ -342,7 +304,7 @@
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
           },
-          "Text": "<font face=\"Arial\" size=\"18\"><text-align=\"Center\">Dashboard</text-align></font>",
+          "Text": "<font face=\"Arial\" size=\"24\"><text-align=\"Center\"><b><font-color=\"#2E75B5\">Dashboard</font-color></b></text-align></font>",
           "Title": {
             "Text": "Texto",
             "Visible": false
@@ -352,7 +314,7 @@
           "Ident": "StiIndicatorElement",
           "Name": "Vendas_Meta",
           "Guid": "4a4493673ea375ff1469611bec973a2f",
-          "ClientRectangle": "20,340,220,220",
+          "ClientRectangle": "20,355,220,220",
           "Border": ";;;;",
           "TextFormat": {
             "Ident": "StiCurrencyFormatService",
@@ -376,7 +338,7 @@
             "Text": "Indicador"
           },
           "Font": ";13;;",
-          "Icon": "Wifi",
+          "Icon": "LineChart",
           "IconSet": "Quarter",
           "DashboardInteraction": {
             "Ident": "Indicator",
@@ -389,7 +351,7 @@
           "Ident": "StiProgressElement",
           "Name": "ProgressElement1",
           "Guid": "684e17fc9587470064879e4dd65c3c9f",
-          "ClientRectangle": "20,120,220,220",
+          "ClientRectangle": "20,115,220,240",
           "Border": ";;;;",
           "Value": {
             "Ident": "ValueProgressMeter",
@@ -400,7 +362,7 @@
           "Target": {
             "Ident": "TargetProgressMeter",
             "Key": "1388bd339d22339cb894509c4efd124c",
-            "Expression": "2000"
+            "Expression": "1500"
           },
           "Title": {
             "Text": "Progresso"
@@ -418,7 +380,7 @@
           "Ident": "StiChartElement",
           "Name": "ChartElement1",
           "Guid": "72a5be8e7ef34d65fc275f2584e80eed",
-          "ClientRectangle": "250,120,460,440",
+          "ClientRectangle": "250,115,460,460",
           "Border": ";;;;",
           "Values": {
             "0": {
@@ -479,7 +441,7 @@
           "Ident": "StiTextElement",
           "Name": "TextElement2",
           "Guid": "b5aef64eb58a086568465e5ff0ee2580",
-          "ClientRectangle": "120,340,100,40",
+          "ClientRectangle": "120,355,100,40",
           "Padding": {
             "Left": 0,
             "Top": 0,
@@ -503,7 +465,7 @@
           "Ident": "StiGaugeElement",
           "Name": "GaugeElement1",
           "Guid": "54aa4f2db39e12bb62c6cf6e90b3367b",
-          "ClientRectangle": "500,580,200,160",
+          "ClientRectangle": "460,595,200,160",
           "Border": ";;;;",
           "Ranges": {
             "0": {
@@ -519,6 +481,8 @@
               "Start": 66
             }
           },
+          "Maximum": 2000,
+          "CalculationMode": "Custom",
           "Type": "Linear",
           "RangeType": "Color",
           "Value": {
@@ -528,7 +492,8 @@
             "Label": "preco"
           },
           "Title": {
-            "Text": "Aleluia"
+            "Text": "Aleluia",
+            "Visible": false
           },
           "Font": ";13;;",
           "DashboardInteraction": {
@@ -540,8 +505,8 @@
         }
       },
       "Height": 750,
-      "Style": "DarkBlue",
-      "Border": ";;2;;;;;solid:Black"
+      "Border": ";;2;;;;;solid:Black",
+      "BackColor": "255,255,255"
     }
   }
 }

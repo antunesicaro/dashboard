@@ -17,8 +17,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 * @generated
 */
 @Entity
-@Table(name = "\"USER\"" ,uniqueConstraints=@UniqueConstraint(name="UNQ_USER_0", columnNames={
-    "normalized_email" }))
+@Table(name = "\"USER\"")
 @XmlRootElement
 @CronappSecurity(post = "Administrators", get = "Administrators", delete = "Administrators", put = "Administrators")
 @JsonFilter("app.entity.User")
