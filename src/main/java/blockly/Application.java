@@ -10,21 +10,25 @@ import java.util.concurrent.Callable;
 @CronappSecurity
 public class Application {
 
-  public static final int TIMEOUT = 300;
+public static final int TIMEOUT = 300;
 
-  /**
-   *
-   * @return Var
-   */
-  // Application
-  public static Var Current() throws Exception {
-    return new Callable<Var>() {
+/**
+ *
+ * Application
+ *
+ * @author Wesley Miranda De Oliveira
+ * @since 24/05/2022 15:01:42
+ *
+ */
+public static Var Current() throws Exception {
+ return new Callable<Var>() {
 
-      public Var call() throws Exception {
-        return
-            cronapi.util.Operations.getApplicationId();
-      }
-    }.call();
-  }
+   public Var call() throws Exception {
+    return
+cronapi.util.Operations.getApplicationId();
+   }
+ }.call();
+}
 
 }
+

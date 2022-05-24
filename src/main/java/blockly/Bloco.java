@@ -17,7 +17,7 @@ public static final int TIMEOUT = 300;
  * Bloco
  *
  * @author Wesley Miranda De Oliveira
- * @since 24/05/2022 14:44:33
+ * @since 24/05/2022 15:01:42
  *
  */
 public static Var Retornar_Substring() throws Exception {
@@ -33,6 +33,7 @@ public static Var Retornar_Substring() throws Exception {
     cronapi.text.Operations.getLettersFromStartToFromStart(texto,
     Var.valueOf(3),
     Var.valueOf(7));
+    System.out.println(posicaoLetra.getObjectAsString());
     return Var.VAR_NULL;
    }
  }.call();
